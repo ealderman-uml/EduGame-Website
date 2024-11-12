@@ -1,36 +1,34 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/Header'
-import Sidebar from './components/Sidebar'
-import Footer from './components/Footer'
-import ContentFrame from './components/ContentFrame'
 
 function App() {
-  const [showSidebar,setShowSidebar] = useState(false);
-
-  const handleToggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-  }
-
-  const styles = {
-    main: {
-      display: "flex",
-      height: "90%"
-    },
-  }
+  const [count, setCount] = useState(0)
 
   return (
-    <Router>
-      <Header sidebarCallback={handleToggleSidebar} />
-      <div style={styles.main}>
-        <Sidebar show={showSidebar}/>
-        <ContentFrame />
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
-      <Footer />
-    </Router>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   )
 }
 
