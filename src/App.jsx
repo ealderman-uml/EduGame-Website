@@ -19,12 +19,19 @@ function App() {
       flexFlow: "column",
       height: "100%",
     },
+    header: {
+      position: "fixed",
+      width: "100%",
+      height: "50px",
+      zIndex: "1",
+    },
+    headerSpacer: {
+      position: "static",
+      padding: "25px",
+    },
     main: {
       display: "flex",
       flexGrow: "1",
-    },
-    header: {
-      height: "50px",
     },
     footer: {
       height: "50px",
@@ -37,6 +44,7 @@ function App() {
         <div style={styles.header}>
           <Header sidebarCallback={handleToggleSidebar} />
         </div>
+        <div style={styles.headerSpacer}></div>
       <div style={styles.main}>
         <Sidebar show={showSidebar}/>
         <ContentFrame />

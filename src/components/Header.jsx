@@ -39,7 +39,7 @@ const Header = ( {sidebarCallback} ) => {
 
       {/* left aligned */}
       <div style={styles.segment}>
-        <img src={hamburgerIcon} style={styles.hamburger} onClick={sidebarCallback} alt="hamburger"/>
+          <img src={hamburgerIcon} style={styles.hamburger} onClick={sidebarCallback} alt="hamburger"/>
         <nav style={styles.nav}>
           {/*
           <a href="google.com" style={styles.link}>Link 1</a>
@@ -52,8 +52,7 @@ const Header = ( {sidebarCallback} ) => {
 
       {/* right aligned */}
       <div style={styles.segment}>
-        <p style={styles.link}>Some stuff</p>
-        <p style={styles.link}>And some things</p>
+        <p style={styles.link}>Mini-Golf Mania</p>
       </div>
     </header>
   );

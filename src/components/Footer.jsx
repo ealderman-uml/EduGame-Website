@@ -21,7 +21,7 @@ const Footer = () => {
     <footer style={styles.footer}>
         <div style={styles.content}>
             <p>&copy; {new Date().getFullYear()} &nbsp;</p>
-            <a href='https://github.com/chrislambert3/EduGame' target='_blank' style={styles.link}>GAME_NAME_HERE.</a>
+            <a href='https://github.com/chrislambert3/EduGame' target='_blank' style={styles.link}>Mini-Golf Mania.</a>
             <p>&nbsp; All rights reserved.</p>
         </div>
     </footer>
