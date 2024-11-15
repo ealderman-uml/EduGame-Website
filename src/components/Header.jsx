@@ -6,32 +6,30 @@ const Header = ( {sidebarCallback} ) => {
   const styles = {
     header: {
       display: "flex",
-      background: "#D9D9D9",
-      padding: "0px 10px",
+      background: "#757575",
       justifyContent: "space-between",
       alignItems: "center",
       fontWeight: "600",
-      height: "5%",
+      width: "100%",
       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
-      zIndex: "5"
+      zIndex: "1"
     },
     segment: {
       display: "flex",
       alignItems: "center"
     },
     nav: {
-      padding: "10px",
       display: "flex",
     },
     link: {
-      padding: "10px 60px 10px 0",
+      padding: "0px 60px 0px 0",
       fontSize: "16px",
       whiteSpace: "nowrap",
       textDecoration: "none"
     },
     hamburger: {
-      padding: "0px 10px 0px 0px",
-      height: '50px',
+      padding: "0px 10px 0px 10px",
+      height: '30px',
       cursor: 'pointer' // makes mouse icon pointer on hover
     },
   }
@@ -43,10 +41,12 @@ const Header = ( {sidebarCallback} ) => {
       <div style={styles.segment}>
         <img src={hamburgerIcon} style={styles.hamburger} onClick={sidebarCallback} alt="hamburger"/>
         <nav style={styles.nav}>
+          {/*
           <a href="google.com" style={styles.link}>Link 1</a>
           <a href="google.com" style={styles.link}>Link 2</a>
           <a href="google.com" style={styles.link}>Link 3</a>
           <a href="google.com" style={styles.link}>Link 4</a>
+          */}
         </nav>
       </div>
 

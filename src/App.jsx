@@ -14,20 +14,37 @@ function App() {
   }
 
   const styles = {
+    container: {
+      display: "flex",
+      flexFlow: "column",
+      height: "100%",
+    },
     main: {
       display: "flex",
-      height: "90%"
+      flexGrow: "1",
+    },
+    header: {
+      height: "50px",
+    },
+    footer: {
+      height: "50px",
     },
   }
 
   return (
     <Router>
-      <Header sidebarCallback={handleToggleSidebar} />
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <Header sidebarCallback={handleToggleSidebar} />
+        </div>
       <div style={styles.main}>
         <Sidebar show={showSidebar}/>
         <ContentFrame />
       </div>
-      <Footer />
+        <div style={styles.footer}>
+          <Footer />
+        </div>
+      </div>
     </Router>
   )
 }

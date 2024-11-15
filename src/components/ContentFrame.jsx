@@ -1,20 +1,16 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom'
-import ProjectBackground from '../pages/ProjectBackground'
-import ProjectDescription from '../pages/ProjectDescription'
-import TeamInfo from '../pages/TeamInfo'
-import Requirements from '../pages/Requirements'
+import AppRoutes from './AppRoutes'
 
 const ContentFrame = () => {
+  const styles = {
+    frame: {
+      height: "100%",
+      width: "100%",
+    }
+  }
   return (
-    <div>
-      {/* TODO: break Routes out into own component - Ed Alderman */}
-        <Routes>
-            <Route path="/" Component={ProjectBackground}/> {/* Note: using as landing page for now */}
-            <Route path="/background" Component={ProjectBackground}/>
-            <Route path="/description" Component={ProjectDescription}/>
-            <Route path="/team" Component={TeamInfo}/>
-        </Routes>
+    <div style={styles.frame}>
+      <AppRoutes />
     </div>
   )
 }
