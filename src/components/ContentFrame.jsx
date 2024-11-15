@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'rea
 import ProjectBackground from '../pages/ProjectBackground'
 import ProjectDescription from '../pages/ProjectDescription'
 import TeamInfo from '../pages/TeamInfo'
+import Requirements from '../pages/Requirements'
 
 const ContentFrame = () => {
   return (
     <div>
+      {/* TODO: break Routes out into own component - Ed Alderman */}
         <Routes>
             <Route path="/" Component={ProjectBackground}/> {/* Note: using as landing page for now */}
             <Route path="/background" Component={ProjectBackground}/>

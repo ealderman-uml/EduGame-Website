@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom'
+import reqDoc from '../documents/Requirements.pdf'
 
 const Sidebar = ( {show} ) => {
     const width = "400"
@@ -36,6 +37,7 @@ const Sidebar = ( {show} ) => {
                 <li><Link style={styles.link} to="/">Brief Project Background</Link></li>
                 <li><Link style={styles.link} to="/description">Brief Project Description</Link></li>
                 <li><Link style={styles.link} to="/team">Team Roster</Link></li>
+                <li><a href={reqDoc} target="_blank" rel="noopener noreferrer">Project Requirements</a></li>
                 <li>Original Project Description(link(s))</li>
                 <li>SRS (link)</li>
                 <li>Prototype(s) (link(s))</li>
