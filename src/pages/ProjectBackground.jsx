@@ -34,7 +34,6 @@ const ProjectBackground = () => {
     },
   }
 
-
   return (
     <div style={styles.container}>
       <div style={styles.assignmentContainer}>
@@ -76,6 +75,9 @@ const ProjectBackground = () => {
           Players are provided x and y coordinates for the ball's starting point, and for the hole.
           They are then presented with an incomplete algebraic expression to fill out that will define the trajectory of the ball.
           Once they have filled this out, they will have to select the power to shoot the ball with to determine whether it will overshoot or undershoot the hole.
+          Once the ball's power is set, the ball is shot following the trajectory defined by the equation they have filled out.
+          If they have successfully solved the equation and entered a reasonable power, the ball will sink into the hole, and the player progresses to the next level.
+          If they miss the hole, or if the power they entered is too low or too high, the ball will miss the hole, and they'll need to start the level again.
         </p>
       </div>
     </div>
