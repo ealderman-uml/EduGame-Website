@@ -1,8 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom'
+import SampleLevel from '../assets/SampleLevel.png'
 
 const Sidebar = ( {show} ) => {
     const width = "400"
+
+    const baseurl = "/EduGame-Website"
+    const siteurl = "https://ealderman-uml.github.io/" + baseurl + "/"
+
     const styles = {
         aside: {
             position: "sticky",
@@ -10,39 +15,55 @@ const Sidebar = ( {show} ) => {
             textAlign: "left",
             width: width + "px",
             height: "100%",
-            backgroundColor: "#e9e9e9",
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0)), url(${SampleLevel})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "left",
             borderRight: "solid #b9b9b9 1px",
             transitionProperty: "margin-left",
             transitionDuration: "0.5s",
+            zIndex: "1",
         },
         link: {
             padding: "10px 60px 10px 0",
-            fontSize: "16px",
-            whiteSpace: "nowrap",
-            textDecoration: "none"
+            fontSize: "large",
+            fontWeight: "bold",
+            color: "black",
         },
         animation: show ? {
             marginLeft: "0px",
         } : {
             marginLeft: -1 * width + "px",
-        }
+        },
+        ul: {
+            margin: "5px"
+        },
+        li: {
+            margin: "10px 0px 0px 0px"
+        },
     }
 
   return (
+    /* spread to merge styles */
     <aside style={{...styles.aside, ...styles.animation}}>
         <div>
-            <ul>
+            <ul style={styles.ul}>
                 {/* See ContentFrame component for Route handling */}
-                <li><Link style={styles.link} to="/">Brief Project Background</Link></li>
-                <li><Link style={styles.link} to="/description">Brief Project Description</Link></li>
-                <li><Link style={styles.link} to="/team">Team Roster</Link></li>
-                <li>Original Project Description(link(s))</li>
-                <li>SRS (link)</li>
-                <li>Prototype(s) (link(s))</li>
-                <li>Bibliogrophay of Resources Used (link(s))</li>
-                <li>Agenda & Minutes of Meetings (secured)</li>
-                <li>Milestones with Internal & Required Deadlines (secured)</li>
-                <li>Intermediate Drafts of Deliverables (secured)</li>
+                <li style={styles.li}><Link style={styles.link} to={baseurl}>Project Background & Description</Link></li>
+                {/* TODO: remove if unnecessary
+                <li style={styles.li}><Link style={styles.link} to="/description">Project Description</Link></li>
+                */}
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/requirements" }>Project Requirements Document</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/team" }>Team Roster</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/resources" }>Bibliogrophay of Resources</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Prototype</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Presentation</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>SRS Document</Link></li>
+                {/* TODO: remove if unnecessary
+                <li style={styles.li}><Link style={styles.link} to="/under_construction">Agenda & Minutes of Meetings (secured)</Link></li>
+                <li style={styles.li}><Link style={styles.link} to="/under_construction">Milestones with Internal & Required Deadlines (secured)</Link></li>
+                <li style={styles.li}><Link style={styles.link} to="/under_construction">Intermediate Drafts of Deliverables (secured)</Link></li>
+                */}
             </ul>
         </div>
     </aside>
