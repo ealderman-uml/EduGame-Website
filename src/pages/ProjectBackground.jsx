@@ -78,6 +78,9 @@ const ProjectBackground = () => {
           Once the ball's power is set, the ball is shot following the trajectory defined by the equation they have filled out.
           If they have successfully solved the equation and entered a reasonable power, the ball will sink into the hole, and the player progresses to the next level.
           If they miss the hole, or if the power they entered is too low or too high, the ball will miss the hole, and they'll need to start the level again.
+          Once the ball's power is set, the ball is shot following the trajectory defined by the equation they have filled out.
+          If they have successfully solved the equation and entered a reasonable power, the ball will sink into the hole, and the player progresses to the next level.
+          If they miss the hole, or if the power they entered is too low or too high, the ball will miss the hole, and they'll need to start the level again.
         </p>
       </div>
     </div>
