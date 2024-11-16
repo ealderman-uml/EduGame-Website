@@ -22,7 +22,6 @@ const Sidebar = ( {show} ) => {
             borderRight: "solid #b9b9b9 1px",
             transitionProperty: "margin-left",
             transitionDuration: "0.5s",
-            zIndex: "1",
         },
         link: {
             padding: "10px 60px 10px 0",
@@ -30,16 +29,17 @@ const Sidebar = ( {show} ) => {
             fontWeight: "bold",
             color: "black",
         },
+        ul: {
+            margin: "5px",
+        },
+        li: {
+            margin: "10px 0px 0px 0px"
+        },
+        /* Handle animation */
         animation: show ? {
             marginLeft: "0px",
         } : {
             marginLeft: -1 * width + "px",
-        },
-        ul: {
-            margin: "5px"
-        },
-        li: {
-            margin: "10px 0px 0px 0px"
         },
     }
 
