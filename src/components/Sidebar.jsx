@@ -53,12 +53,12 @@ const Sidebar = ( {show} ) => {
                 {/* TODO: remove if unnecessary
                 <li style={styles.li}><Link style={styles.link} to="/description">Project Description</Link></li>
                 */}
-                <li style={styles.li}><Link style={styles.link} to="/requirements">Project Requirements Document</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/team">Team Roster</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/resources">Bibliogrophay of Resources</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/under_construction">Prototype</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/under_construction">Presentation</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/under_construction">SRS Document</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/requirements" }>Project Requirements Document</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/team" }>Team Roster</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/resources" }>Bibliogrophay of Resources</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Prototype</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Presentation</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>SRS Document</Link></li>
                 {/* TODO: remove if unnecessary
                 <li style={styles.li}><Link style={styles.link} to="/under_construction">Agenda & Minutes of Meetings (secured)</Link></li>
                 <li style={styles.li}><Link style={styles.link} to="/under_construction">Milestones with Internal & Required Deadlines (secured)</Link></li>

@@ -16,11 +16,11 @@ const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/EduGame-Website" Component={ProjectBackground}/> {/* Note: using as landing page for now */}
-            <Route path="/background" Component={ProjectBackground}/>
-            <Route path="/team" Component={TeamInfo}/>
-            <Route path="/requirements" element={<InlinePDFRenderer baseurl={siteurl} filename={"Requirements-Dn5gEdWI.pdf"}/>}/>
-            <Route path="/resources" Component={Resources}/>
-            <Route path="/under_construction" Component={UnderConstruction}/>
+            <Route path={ baseurl + "/background" } Component={ProjectBackground}/>
+            <Route path={ baseurl + "/requirements" } element={<InlinePDFRenderer baseurl={siteurl} filename={"Requirements-Dn5gEdWI.pdf"}/>}/>
+            <Route path={ baseurl + "/team"} Component={TeamInfo}/>
+            <Route path={ baseurl + "/resources"} Component={Resources}/>
+            <Route path={ baseurl + "/under_construction"} Component={UnderConstruction}/>
         </Routes>
     )
 }
