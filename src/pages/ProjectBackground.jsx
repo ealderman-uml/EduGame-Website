@@ -37,6 +37,7 @@ const ProjectBackground = () => {
   return (
     <div style={styles.container}>
       <div style={styles.assignmentContainer}>
+        {/*TODO: Update project description*/}
         <h1>Edutainment Game</h1>
         <p>
           As video games become increasingly more common, teachers and parents are increasingly

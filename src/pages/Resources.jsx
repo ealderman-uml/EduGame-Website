@@ -33,7 +33,7 @@ const Resources = () => {
         },
     }
 
-
+  // TODO: update with all resources used
   return (
     <div style={styles.container}>
         <div style={styles.tableContainer}>

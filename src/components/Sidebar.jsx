@@ -50,20 +50,15 @@ const Sidebar = ( {show} ) => {
             <ul style={styles.ul}>
                 {/* See ContentFrame component for Route handling */}
                 <li style={styles.li}><Link style={styles.link} to={baseurl}>Project Background & Description</Link></li>
-                {/* TODO: remove if unnecessary
-                <li style={styles.li}><Link style={styles.link} to="/description">Project Description</Link></li>
-                */}
                 <li style={styles.li}><Link style={styles.link} to={ baseurl + "/requirements" }>Project Requirements Document</Link></li>
                 <li style={styles.li}><Link style={styles.link} to={ baseurl + "/team" }>Team Roster</Link></li>
                 <li style={styles.li}><Link style={styles.link} to={ baseurl + "/resources" }>Bibliogrophay of Resources</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Prototype</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/prototype" }>Prototype</Link></li>
                 <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Presentation</Link></li>
                 <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>SRS Document</Link></li>
-                {/* TODO: remove if unnecessary
-                <li style={styles.li}><Link style={styles.link} to="/under_construction">Agenda & Minutes of Meetings (secured)</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/under_construction">Milestones with Internal & Required Deadlines (secured)</Link></li>
-                <li style={styles.li}><Link style={styles.link} to="/under_construction">Intermediate Drafts of Deliverables (secured)</Link></li>
-                */}
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Demonstration Video</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Requirements and Use Cases</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Diagrams</Link></li>
             </ul>
         </div>
     </aside>
