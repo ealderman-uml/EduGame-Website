@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: "/EduGame-Website",
   plugins: [react()],
+  assetsInclude: ['**/*.pdf', '**/*.br', 'src/assets/WebGL_Build/Build/WebGL Build.framework.js.br'],
 })
