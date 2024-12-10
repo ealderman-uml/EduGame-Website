@@ -1,11 +1,9 @@
 import React from 'react'
+import InlinePDFRenderer from '../components/InlinePDFRenderer'
 
 const Requirements = () => {
   return (
-    <>
-        <div>Requirements</div>
-        <iframe src="/WebGL_Build/documents/Requirements.pdf" width="100%" height="100%" />
-    </>
+    <InlinePDFRenderer url={"/documents/Requirements.pdf"}/>
   )
 }
 

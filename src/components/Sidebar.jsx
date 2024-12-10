@@ -39,7 +39,7 @@ const Sidebar = ( {show} ) => {
             margin: "5px"
         },
         li: {
-            margin: "10px 0px 0px 0px"
+            margin: "20px 0px 0px 0px"
         },
     }
 
@@ -49,16 +49,15 @@ const Sidebar = ( {show} ) => {
         <div>
             <ul style={styles.ul}>
                 {/* See ContentFrame component for Route handling */}
-                <li style={styles.li}><Link style={styles.link} to={baseurl}>Project Background & Description</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/requirements" }>Project Requirements Document</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={baseurl}>Project Description</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/prototype" }>Game Prototype</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/requirements" }>Requirements Document</Link></li>
                 <li style={styles.li}><Link style={styles.link} to={ baseurl + "/team" }>Team Roster</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/resources" }>Bibliogrophay of Resources</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/prototype" }>Prototype</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Presentation</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>SRS Document</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Demonstration Video</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Requirements and Use Cases</Link></li>
-                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/under_construction" }>Diagrams</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/presentation" }>Presentation</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/SRS" }>SRS Document</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/demonstration_video" }>Demonstration Video</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/diagrams" }>Diagrams</Link></li>
+                <li style={styles.li}><Link style={styles.link} to={ baseurl + "/resources" }>Resources We Used</Link></li>
             </ul>
         </div>
     </aside>

@@ -18,6 +18,7 @@ function App() {
       display: "flex",
       flexFlow: "column",
       height: "100%",
+      backgroundColor: "#d7d7d7",
     },
     header: {
       position: "fixed",

@@ -1,5 +1,6 @@
 import React from 'react'
 import StartMenu from '../assets/StartMenu.png'
+import SampleLevel1 from '../assets/SampleLevel1.png'
 import SampleLevel2 from '../assets/SampleLevel2.png'
 
 const ProjectBackground = () => {
@@ -7,15 +8,7 @@ const ProjectBackground = () => {
     container: {
       backgroundColor: "#d7d7d7",
       display: "flex",
-      flexFlow: "column",
       height: "100%",
-      //width: "100%",
-      margin: "auto",
-      padding: "0 10px 0 10px",
-    },
-    assignmentContainer: {
-      textAlign: "center",
-      width: "70%",
       margin: "auto",
     },
     imageContainer: {
@@ -24,11 +17,11 @@ const ProjectBackground = () => {
     },
     image: {
       borderRadius: "25px",
-      width: "50%",
+      width: "100%",
       padding: "10px",
     },
     descriptionContainer: {
-      textAlign: "center",
+      textAlign: "justify",
       width: "70%",
       margin: "auto",
     },
@@ -36,53 +29,41 @@ const ProjectBackground = () => {
 
   return (
     <div style={styles.container}>
-      <div style={styles.assignmentContainer}>
-        {/*TODO: Update project description*/}
-        <h1>Edutainment Game</h1>
-        <p>
-          As video games become increasingly more common, teachers and parents are increasingly
-          using them to supplement their children’s educations in a fun way. Educational games may
-          improve student engagement and incentivize learning. In the past, games such as the Oregon
-          Trail, Number Munchers, SimCity, the Dr. Brain series, and Mavis Beacon Teaches Typing
-          have all been used to either teach or reinforce ideas.
-        </p>
-        <p>
-          Your team will design and prototype a new educational video game. This game must
-          be suitable for students between 4th to 8th grade (late elementary school or middle school).
-          You may choose to narrow the target age range. The target demographic will likely have an
-          effect on the text, concepts, and mechanics that you want to use; Young children may not
-          have the reading, motor, or analytical skills required for some designs.
-        </p>
-        <p>
-          The game must have an educational component. The Massachusetts Department of Education and Common Core standards can give some suggestions for topics that are appropriate
-          for different age levels
-        </p>
-        <p>
-          This project is open-ended. You have freedom to choose the language, engine, genre, and
-          topic for your game.
-        </p>
-      </div>
-      <div style={styles.imageContainer}>
-        <img src={StartMenu} alt="Start Menu" style={styles.image} />
-        <img src={SampleLevel2} alt="SampleLevel2" style={styles.image} />
-      </div>
       <div style={styles.descriptionContainer}>
-        <h2>Mini-Golf Mania</h2>
+        <div style={styles.imageContainer}>
+          <h1>Mini-Golf Mania</h1>
+          <img src={StartMenu} alt="Start Menu" style={styles.image} />
+        </div>
+        <h2>Project Background</h2>
         <p>
-          Our team decided to approach this assignment by building a mini-golf-style game
-          that focuses on reinforcing graphing concepts from Algebra 1.
-          Players will be met with an overhead view of a golf course that has the first quadrant
-          of the cartesian plane overlaid on top of it.
-          Players are provided x and y coordinates for the ball's starting point, and for the hole.
-          They are then presented with an incomplete algebraic expression to fill out that will define the trajectory of the ball.
-          Once they have filled this out, they will have to select the power to shoot the ball with to determine whether it will overshoot or undershoot the hole.
-          Once the ball's power is set, the ball is shot following the trajectory defined by the equation they have filled out.
-          If they have successfully solved the equation and entered a reasonable power, the ball will sink into the hole, and the player progresses to the next level.
-          If they miss the hole, or if the power they entered is too low or too high, the ball will miss the hole, and they'll need to start the level again.
-          Once the ball's power is set, the ball is shot following the trajectory defined by the equation they have filled out.
-          If they have successfully solved the equation and entered a reasonable power, the ball will sink into the hole, and the player progresses to the next level.
-          If they miss the hole, or if the power they entered is too low or too high, the ball will miss the hole, and they'll need to start the level again.
+          Our team set out to design an educational game to help reinforce algebraic concepts for middle school students.
+          So-called "edutainment" games have been shown to be effective in engaging students and improving learning outcomes.
+          They also provide young students a unique opportunity to apply concepts to a practical, stimulating problem.
         </p>
+        <h2>Project Description</h2>
+        <p>
+          Our Game, Mini Golf Mania, is an interactive,
+          web-based application designed to teach algebra concepts through engaging gameplay.
+          It is intended as a standalone educational product,
+          leveraging mini golf gameplay to create a fun and interactive learning experience. 
+          By solving mathematical equations, players influence the trajectory of a golf ball,
+          merging gameplay with core algebraic principles.
+          MGM is accessible via standard web browsers and is compatible across desktop and mobile platforms,
+          making it a versatile educational tool for students.
+        </p>
+        <h2>Target Audience</h2>
+        <p>
+        The intended users for MGM are students primarily in grades 7 and 8, who are learning Algebra I.
+        These users are expected to have a foundational understanding of algebraic principles,
+        including linear equations and expressions, which are typically introduced in 7th grade.
+        Users should be comfortable working with linear equations in point-slope, slope-intercept,
+        and standard form. By 8th grade, students are expected to have developed proficiency with linear relationships,
+        equations and expressions as recommended by the Massachusetts Department of Education’s advisory on the Mathematics Curriculum Framework.
+        The game is designed to challenge and engage users who are proficient in algebraic reasoning therefore MGM targets higher-level middle school students who can apply mathematical concepts to solve interactive challenges.
+        </p>
+        <div style={styles.imageContainer}>
+          <img src={SampleLevel2} alt="SampleLevel2" style={styles.image} />
+        </div>
       </div>
     </div>
   )
